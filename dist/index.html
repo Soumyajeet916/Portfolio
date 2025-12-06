@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPortfolio | Interactive 3D Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3b82f6',
+              secondary: '#10b981',
+              dark: '#0f172a',
+              glass: 'rgba(255, 255, 255, 0.05)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+      
+      body {
+        margin: 0;
+        overflow: hidden;
+        /* Default background to match dark mode to prevent white flashes */
+        background-color: #0f172a; 
+      }
+      
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Theme-aware glass panel */
+      
+      .glass-panel {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+      }
+      
+      /* Dark Mode (Default look) */
+      
+      .dark .glass-panel {
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      
+      /* Light Mode */
+      
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.19?external=react,react-dom,three",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.105.6?external=react,react-dom,three,@react-three/fiber",
+    "three": "https://esm.sh/three@0.164.1",
+    "recharts": "https://esm.sh/recharts@2.12.7?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.378.0",
+    "@emailjs/browser": "https://esm.sh/@emailjs/browser@4.3.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-C6GTSgLq.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
