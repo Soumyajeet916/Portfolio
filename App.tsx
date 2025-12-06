@@ -1,5 +1,3 @@
-// @ts-nocheck
-/* @jsxImportSource @react-three/fiber */
 import React, { useRef, useState, useEffect, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Environment, Loader, ContactShadows } from '@react-three/drei';
